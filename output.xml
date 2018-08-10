@@ -1,0 +1,1713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180807 17:43:52.653" generator="Robot 3.0.4 (Python 2.7.10 on darwin)">
+<suite source="/Users/vernon.cenzon/Documents/robot-poc-phptravels/tests/UserRegistration.robot" id="s1" name="UserRegistration">
+<test id="s1-t1" name="Failed User Registration">
+<kw type="setup" name="Go to Registration Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${HOMEPAGE_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180807 17:43:52.820" level="INFO">Opening browser 'Chrome' to base url 'https://www.phptravels.net/'.</msg>
+<status status="PASS" endtime="20180807 17:44:01.475" starttime="20180807 17:43:52.820"></status>
+</kw>
+<kw name="Wait Enabled And Click" library="CustomCommands">
+<arguments>
+<arg>${MY_ACCOUNT_MENU}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:01.514" starttime="20180807 17:44:01.476"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:01.515" level="INFO">Clicking element 'css:ul.navbar-side:nth-child(1) &gt; li:nth-child(1) &gt; a:nth-child(1)'.</msg>
+<status status="PASS" endtime="20180807 17:44:01.629" starttime="20180807 17:44:01.515"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:01.630" starttime="20180807 17:44:01.475"></status>
+</kw>
+<kw name="Wait Enabled And Click" library="CustomCommands">
+<arguments>
+<arg>${SIGN_UP_OPTION}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:01.703" starttime="20180807 17:44:01.631"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:01.704" level="INFO">Clicking element 'css:.open &gt; ul:nth-child(2) &gt; li:nth-child(2) &gt; a:nth-child(1)'.</msg>
+<status status="PASS" endtime="20180807 17:44:02.352" starttime="20180807 17:44:01.703"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:02.352" starttime="20180807 17:44:01.630"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:02.353" starttime="20180807 17:43:52.820"></status>
+</kw>
+<kw name="Perform User Registration" library="RegistrationPage">
+<arguments>
+<arg>${EMPTY}</arg>
+<arg>${LAST_NAME}</arg>
+<arg>${MOBILE_NO}</arg>
+<arg>${VALID_EMAIL}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+<arg>${MISSING_FNAME_SPIEL}</arg>
+</arguments>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_FNAME_FIELD}</arg>
+<arg>${fname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:02.395" starttime="20180807 17:44:02.355"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:02.396" level="INFO">Typing text '' into text field 'css:div.form-group:nth-child(3) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:02.461" starttime="20180807 17:44:02.395"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:02.461" starttime="20180807 17:44:02.354"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_LNAME_FIELD}</arg>
+<arg>${lname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:02.495" starttime="20180807 17:44:02.462"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:02.496" level="INFO">Typing text 'Smith' into text field 'css:div.form-group:nth-child(4) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:02.610" starttime="20180807 17:44:02.495"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:02.610" starttime="20180807 17:44:02.461"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_MOBILE_FIELD}</arg>
+<arg>${mobile}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:02.643" starttime="20180807 17:44:02.611"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:02.644" level="INFO">Typing text '12345678' into text field 'css:div.form-group:nth-child(5) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:02.744" starttime="20180807 17:44:02.644"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:02.744" starttime="20180807 17:44:02.611"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:02.777" starttime="20180807 17:44:02.745"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:02.778" level="INFO">Typing text 'user@phptravels.com' into text field 'css:div.form-group:nth-child(6) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:02.944" starttime="20180807 17:44:02.777"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:02.944" starttime="20180807 17:44:02.744"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:02.977" starttime="20180807 17:44:02.945"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:02.978" level="INFO">Typing text 'demouser' into text field 'css:div.form-group:nth-child(7) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:03.075" starttime="20180807 17:44:02.977"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:03.075" starttime="20180807 17:44:02.945"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_CONFIRM_PASS}</arg>
+<arg>${confirm_password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:03.110" starttime="20180807 17:44:03.076"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:03.111" level="INFO">Typing text 'demouser' into text field 'css:div.form-group:nth-child(8) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:03.216" starttime="20180807 17:44:03.110"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:03.216" starttime="20180807 17:44:03.075"></status>
+</kw>
+<kw name="Wait Enabled And Click" library="CustomCommands">
+<arguments>
+<arg>${SIGN_UP_BTN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:03.249" starttime="20180807 17:44:03.217"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:03.250" level="INFO">Clicking element 'css:.signupbtn'.</msg>
+<status status="PASS" endtime="20180807 17:44:03.327" starttime="20180807 17:44:03.250"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:03.327" starttime="20180807 17:44:03.216"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180807 17:44:04.329" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180807 17:44:04.329" starttime="20180807 17:44:03.327"></status>
+</kw>
+<kw name="Wait Visible And Check Text" library="CustomCommands">
+<arguments>
+<arg>${message_selector}</arg>
+<arg>${error}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:04.357" starttime="20180807 17:44:04.331"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+<arg>ignore_case=True</arg>
+</arguments>
+<msg timestamp="20180807 17:44:04.358" level="INFO">Verifying element 'css:.alert &gt; p:nth-child(1)' contains exact text 'The First name field is required.'.</msg>
+<status status="PASS" endtime="20180807 17:44:04.380" starttime="20180807 17:44:04.357"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:04.381" starttime="20180807 17:44:04.329"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:04.381" starttime="20180807 17:44:02.353"></status>
+</kw>
+<kw name="Perform User Registration" library="RegistrationPage">
+<arguments>
+<arg>${FIRST_NAME}</arg>
+<arg>${EMPTY}</arg>
+<arg>${MOBILE_NO}</arg>
+<arg>${VALID_EMAIL}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+<arg>${MISSING_LNAME_SPIEL}</arg>
+</arguments>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_FNAME_FIELD}</arg>
+<arg>${fname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:04.400" starttime="20180807 17:44:04.383"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:04.401" level="INFO">Typing text 'Johny' into text field 'css:div.form-group:nth-child(3) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:04.466" starttime="20180807 17:44:04.400"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:04.466" starttime="20180807 17:44:04.382"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_LNAME_FIELD}</arg>
+<arg>${lname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:04.487" starttime="20180807 17:44:04.467"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:04.488" level="INFO">Typing text '' into text field 'css:div.form-group:nth-child(4) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:04.525" starttime="20180807 17:44:04.487"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:04.525" starttime="20180807 17:44:04.466"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_MOBILE_FIELD}</arg>
+<arg>${mobile}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:04.546" starttime="20180807 17:44:04.526"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:04.547" level="INFO">Typing text '12345678' into text field 'css:div.form-group:nth-child(5) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:04.630" starttime="20180807 17:44:04.546"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:04.631" starttime="20180807 17:44:04.526"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:04.653" starttime="20180807 17:44:04.633"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:04.653" level="INFO">Typing text 'user@phptravels.com' into text field 'css:div.form-group:nth-child(6) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:04.783" starttime="20180807 17:44:04.653"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:04.784" starttime="20180807 17:44:04.632"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:04.805" starttime="20180807 17:44:04.785"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:04.806" level="INFO">Typing text 'demouser' into text field 'css:div.form-group:nth-child(7) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:04.874" starttime="20180807 17:44:04.805"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:04.874" starttime="20180807 17:44:04.784"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_CONFIRM_PASS}</arg>
+<arg>${confirm_password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:04.895" starttime="20180807 17:44:04.875"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:04.895" level="INFO">Typing text 'demouser' into text field 'css:div.form-group:nth-child(8) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:04.970" starttime="20180807 17:44:04.895"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:04.970" starttime="20180807 17:44:04.874"></status>
+</kw>
+<kw name="Wait Enabled And Click" library="CustomCommands">
+<arguments>
+<arg>${SIGN_UP_BTN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:04.990" starttime="20180807 17:44:04.971"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:04.991" level="INFO">Clicking element 'css:.signupbtn'.</msg>
+<status status="PASS" endtime="20180807 17:44:05.046" starttime="20180807 17:44:04.990"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:05.046" starttime="20180807 17:44:04.970"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180807 17:44:06.049" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180807 17:44:06.049" starttime="20180807 17:44:05.047"></status>
+</kw>
+<kw name="Wait Visible And Check Text" library="CustomCommands">
+<arguments>
+<arg>${message_selector}</arg>
+<arg>${error}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:06.072" starttime="20180807 17:44:06.050"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+<arg>ignore_case=True</arg>
+</arguments>
+<msg timestamp="20180807 17:44:06.073" level="INFO">Verifying element 'css:.alert &gt; p:nth-child(1)' contains exact text 'The Last Name field is required.'.</msg>
+<status status="PASS" endtime="20180807 17:44:06.094" starttime="20180807 17:44:06.072"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:06.095" starttime="20180807 17:44:06.050"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:06.095" starttime="20180807 17:44:04.381"></status>
+</kw>
+<kw name="Perform User Registration" library="RegistrationPage">
+<arguments>
+<arg>${FIRST_NAME}</arg>
+<arg>${LAST_NAME}</arg>
+<arg>${MOBILE_NO}</arg>
+<arg>${EMPTY}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+<arg>${MISSING_EMAIL_SPIEL}</arg>
+</arguments>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_FNAME_FIELD}</arg>
+<arg>${fname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:06.114" starttime="20180807 17:44:06.097"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:06.114" level="INFO">Typing text 'Johny' into text field 'css:div.form-group:nth-child(3) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:06.176" starttime="20180807 17:44:06.114"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:06.176" starttime="20180807 17:44:06.096"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_LNAME_FIELD}</arg>
+<arg>${lname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:06.200" starttime="20180807 17:44:06.177"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:06.201" level="INFO">Typing text 'Smith' into text field 'css:div.form-group:nth-child(4) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:06.259" starttime="20180807 17:44:06.201"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:06.259" starttime="20180807 17:44:06.176"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_MOBILE_FIELD}</arg>
+<arg>${mobile}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:06.279" starttime="20180807 17:44:06.260"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:06.280" level="INFO">Typing text '12345678' into text field 'css:div.form-group:nth-child(5) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:06.358" starttime="20180807 17:44:06.279"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:06.358" starttime="20180807 17:44:06.260"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:06.379" starttime="20180807 17:44:06.359"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:06.380" level="INFO">Typing text '' into text field 'css:div.form-group:nth-child(6) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:06.416" starttime="20180807 17:44:06.379"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:06.417" starttime="20180807 17:44:06.358"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:06.440" starttime="20180807 17:44:06.419"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:06.441" level="INFO">Typing text 'demouser' into text field 'css:div.form-group:nth-child(7) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:06.509" starttime="20180807 17:44:06.440"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:06.510" starttime="20180807 17:44:06.418"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_CONFIRM_PASS}</arg>
+<arg>${confirm_password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:06.529" starttime="20180807 17:44:06.510"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:06.530" level="INFO">Typing text 'demouser' into text field 'css:div.form-group:nth-child(8) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:06.609" starttime="20180807 17:44:06.530"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:06.609" starttime="20180807 17:44:06.510"></status>
+</kw>
+<kw name="Wait Enabled And Click" library="CustomCommands">
+<arguments>
+<arg>${SIGN_UP_BTN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:06.648" starttime="20180807 17:44:06.610"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:06.649" level="INFO">Clicking element 'css:.signupbtn'.</msg>
+<status status="PASS" endtime="20180807 17:44:06.713" starttime="20180807 17:44:06.648"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:06.713" starttime="20180807 17:44:06.609"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180807 17:44:07.715" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180807 17:44:07.715" starttime="20180807 17:44:06.714"></status>
+</kw>
+<kw name="Wait Visible And Check Text" library="CustomCommands">
+<arguments>
+<arg>${message_selector}</arg>
+<arg>${error}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:07.738" starttime="20180807 17:44:07.717"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+<arg>ignore_case=True</arg>
+</arguments>
+<msg timestamp="20180807 17:44:07.738" level="INFO">Verifying element 'css:.alert &gt; p:nth-child(1)' contains exact text 'The Email field is required.'.</msg>
+<status status="PASS" endtime="20180807 17:44:07.760" starttime="20180807 17:44:07.738"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:07.761" starttime="20180807 17:44:07.716"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:07.761" starttime="20180807 17:44:06.095"></status>
+</kw>
+<kw name="Perform User Registration" library="RegistrationPage">
+<arguments>
+<arg>${FIRST_NAME}</arg>
+<arg>${LAST_NAME}</arg>
+<arg>${MOBILE_NO}</arg>
+<arg>${VALID_EMAIL}</arg>
+<arg>${EMPTY}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+<arg>${MISSING_PASSWORD_SPIEL}</arg>
+</arguments>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_FNAME_FIELD}</arg>
+<arg>${fname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:07.780" starttime="20180807 17:44:07.762"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:07.780" level="INFO">Typing text 'Johny' into text field 'css:div.form-group:nth-child(3) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:07.842" starttime="20180807 17:44:07.780"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:07.842" starttime="20180807 17:44:07.762"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_LNAME_FIELD}</arg>
+<arg>${lname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:07.863" starttime="20180807 17:44:07.843"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:07.863" level="INFO">Typing text 'Smith' into text field 'css:div.form-group:nth-child(4) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:07.929" starttime="20180807 17:44:07.863"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:07.930" starttime="20180807 17:44:07.842"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_MOBILE_FIELD}</arg>
+<arg>${mobile}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:07.954" starttime="20180807 17:44:07.930"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:07.955" level="INFO">Typing text '12345678' into text field 'css:div.form-group:nth-child(5) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:08.027" starttime="20180807 17:44:07.955"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:08.027" starttime="20180807 17:44:07.930"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:08.046" starttime="20180807 17:44:08.028"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:08.047" level="INFO">Typing text 'user@phptravels.com' into text field 'css:div.form-group:nth-child(6) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:08.178" starttime="20180807 17:44:08.047"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:08.178" starttime="20180807 17:44:08.027"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:08.198" starttime="20180807 17:44:08.179"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:08.199" level="INFO">Typing text '' into text field 'css:div.form-group:nth-child(7) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:08.242" starttime="20180807 17:44:08.198"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:08.242" starttime="20180807 17:44:08.178"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_CONFIRM_PASS}</arg>
+<arg>${confirm_password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:08.262" starttime="20180807 17:44:08.243"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:08.263" level="INFO">Typing text 'demouser' into text field 'css:div.form-group:nth-child(8) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:08.334" starttime="20180807 17:44:08.263"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:08.335" starttime="20180807 17:44:08.242"></status>
+</kw>
+<kw name="Wait Enabled And Click" library="CustomCommands">
+<arguments>
+<arg>${SIGN_UP_BTN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:08.357" starttime="20180807 17:44:08.336"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:08.357" level="INFO">Clicking element 'css:.signupbtn'.</msg>
+<status status="PASS" endtime="20180807 17:44:08.411" starttime="20180807 17:44:08.357"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:08.411" starttime="20180807 17:44:08.335"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180807 17:44:09.413" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180807 17:44:09.413" starttime="20180807 17:44:08.412"></status>
+</kw>
+<kw name="Wait Visible And Check Text" library="CustomCommands">
+<arguments>
+<arg>${message_selector}</arg>
+<arg>${error}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:09.435" starttime="20180807 17:44:09.414"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+<arg>ignore_case=True</arg>
+</arguments>
+<msg timestamp="20180807 17:44:09.436" level="INFO">Verifying element 'css:.alert &gt; p:nth-child(1)' contains exact text 'The Password field is required.'.</msg>
+<status status="PASS" endtime="20180807 17:44:09.459" starttime="20180807 17:44:09.436"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:09.459" starttime="20180807 17:44:09.413"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:09.459" starttime="20180807 17:44:07.761"></status>
+</kw>
+<kw name="Perform User Registration" library="RegistrationPage">
+<arguments>
+<arg>${FIRST_NAME}</arg>
+<arg>${LAST_NAME}</arg>
+<arg>${MOBILE_NO}</arg>
+<arg>${VALID_EMAIL}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<arg>${EMPTY}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+<arg>${MISSING_PASSWORD_SPIEL}</arg>
+</arguments>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_FNAME_FIELD}</arg>
+<arg>${fname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:09.478" starttime="20180807 17:44:09.461"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:09.479" level="INFO">Typing text 'Johny' into text field 'css:div.form-group:nth-child(3) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:09.540" starttime="20180807 17:44:09.478"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:09.540" starttime="20180807 17:44:09.461"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_LNAME_FIELD}</arg>
+<arg>${lname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:09.562" starttime="20180807 17:44:09.541"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:09.562" level="INFO">Typing text 'Smith' into text field 'css:div.form-group:nth-child(4) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:09.630" starttime="20180807 17:44:09.562"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:09.631" starttime="20180807 17:44:09.541"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_MOBILE_FIELD}</arg>
+<arg>${mobile}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:09.655" starttime="20180807 17:44:09.631"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:09.656" level="INFO">Typing text '12345678' into text field 'css:div.form-group:nth-child(5) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:09.726" starttime="20180807 17:44:09.655"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:09.726" starttime="20180807 17:44:09.631"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:09.749" starttime="20180807 17:44:09.727"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:09.751" level="INFO">Typing text 'user@phptravels.com' into text field 'css:div.form-group:nth-child(6) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:09.874" starttime="20180807 17:44:09.749"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:09.874" starttime="20180807 17:44:09.727"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:09.895" starttime="20180807 17:44:09.875"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:09.896" level="INFO">Typing text 'demouser' into text field 'css:div.form-group:nth-child(7) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:09.972" starttime="20180807 17:44:09.896"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:09.973" starttime="20180807 17:44:09.875"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_CONFIRM_PASS}</arg>
+<arg>${confirm_password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:09.991" starttime="20180807 17:44:09.973"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:09.992" level="INFO">Typing text '' into text field 'css:div.form-group:nth-child(8) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:10.027" starttime="20180807 17:44:09.992"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:10.027" starttime="20180807 17:44:09.973"></status>
+</kw>
+<kw name="Wait Enabled And Click" library="CustomCommands">
+<arguments>
+<arg>${SIGN_UP_BTN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:10.049" starttime="20180807 17:44:10.028"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:10.050" level="INFO">Clicking element 'css:.signupbtn'.</msg>
+<status status="PASS" endtime="20180807 17:44:10.094" starttime="20180807 17:44:10.050"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:10.094" starttime="20180807 17:44:10.027"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180807 17:44:11.096" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180807 17:44:11.096" starttime="20180807 17:44:10.095"></status>
+</kw>
+<kw name="Wait Visible And Check Text" library="CustomCommands">
+<arguments>
+<arg>${message_selector}</arg>
+<arg>${error}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:11.117" starttime="20180807 17:44:11.097"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+<arg>ignore_case=True</arg>
+</arguments>
+<msg timestamp="20180807 17:44:11.117" level="INFO">Verifying element 'css:.alert &gt; p:nth-child(1)' contains exact text 'The Password field is required.'.</msg>
+<status status="PASS" endtime="20180807 17:44:11.139" starttime="20180807 17:44:11.117"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:11.139" starttime="20180807 17:44:11.096"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:11.139" starttime="20180807 17:44:09.460"></status>
+</kw>
+<kw name="Perform User Registration" library="RegistrationPage">
+<arguments>
+<arg>${FIRST_NAME}</arg>
+<arg>${LAST_NAME}</arg>
+<arg>${MOBILE_NO}</arg>
+<arg>${INVALID_EMAIL}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+<arg>${INVALID_EMAIL_SPIEL}</arg>
+</arguments>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_FNAME_FIELD}</arg>
+<arg>${fname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:11.158" starttime="20180807 17:44:11.141"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:11.159" level="INFO">Typing text 'Johny' into text field 'css:div.form-group:nth-child(3) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:11.223" starttime="20180807 17:44:11.158"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:11.223" starttime="20180807 17:44:11.140"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_LNAME_FIELD}</arg>
+<arg>${lname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:11.248" starttime="20180807 17:44:11.224"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:11.248" level="INFO">Typing text 'Smith' into text field 'css:div.form-group:nth-child(4) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:11.316" starttime="20180807 17:44:11.248"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:11.316" starttime="20180807 17:44:11.224"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_MOBILE_FIELD}</arg>
+<arg>${mobile}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:11.339" starttime="20180807 17:44:11.317"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:11.340" level="INFO">Typing text '12345678' into text field 'css:div.form-group:nth-child(5) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:11.410" starttime="20180807 17:44:11.339"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:11.410" starttime="20180807 17:44:11.316"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:11.431" starttime="20180807 17:44:11.411"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:11.431" level="INFO">Typing text 'q12w3e' into text field 'css:div.form-group:nth-child(6) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:11.498" starttime="20180807 17:44:11.431"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:11.498" starttime="20180807 17:44:11.410"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:11.520" starttime="20180807 17:44:11.499"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:11.521" level="INFO">Typing text 'demouser' into text field 'css:div.form-group:nth-child(7) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:11.590" starttime="20180807 17:44:11.521"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:11.590" starttime="20180807 17:44:11.498"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_CONFIRM_PASS}</arg>
+<arg>${confirm_password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:11.613" starttime="20180807 17:44:11.591"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:11.613" level="INFO">Typing text 'demouser' into text field 'css:div.form-group:nth-child(8) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:11.682" starttime="20180807 17:44:11.613"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:11.682" starttime="20180807 17:44:11.591"></status>
+</kw>
+<kw name="Wait Enabled And Click" library="CustomCommands">
+<arguments>
+<arg>${SIGN_UP_BTN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:11.705" starttime="20180807 17:44:11.683"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:11.705" level="INFO">Clicking element 'css:.signupbtn'.</msg>
+<status status="PASS" endtime="20180807 17:44:11.764" starttime="20180807 17:44:11.705"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:11.764" starttime="20180807 17:44:11.682"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180807 17:44:12.766" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180807 17:44:12.766" starttime="20180807 17:44:11.764"></status>
+</kw>
+<kw name="Wait Visible And Check Text" library="CustomCommands">
+<arguments>
+<arg>${message_selector}</arg>
+<arg>${error}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:12.788" starttime="20180807 17:44:12.768"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+<arg>ignore_case=True</arg>
+</arguments>
+<msg timestamp="20180807 17:44:12.789" level="INFO">Verifying element 'css:.alert &gt; p:nth-child(1)' contains exact text 'The Email field must contain a valid email address.'.</msg>
+<status status="PASS" endtime="20180807 17:44:12.811" starttime="20180807 17:44:12.789"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:12.811" starttime="20180807 17:44:12.767"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:12.811" starttime="20180807 17:44:11.140"></status>
+</kw>
+<kw name="Perform User Registration" library="RegistrationPage">
+<arguments>
+<arg>${FIRST_NAME}</arg>
+<arg>${LAST_NAME}</arg>
+<arg>${MOBILE_NO}</arg>
+<arg>${VALID_EMAIL}</arg>
+<arg>${SHORT_PASSWORD}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+<arg>${SHORT_PASSWORD_SPIEL}</arg>
+</arguments>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_FNAME_FIELD}</arg>
+<arg>${fname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:12.830" starttime="20180807 17:44:12.813"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:12.831" level="INFO">Typing text 'Johny' into text field 'css:div.form-group:nth-child(3) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:12.893" starttime="20180807 17:44:12.830"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:12.893" starttime="20180807 17:44:12.812"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_LNAME_FIELD}</arg>
+<arg>${lname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:12.914" starttime="20180807 17:44:12.894"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:12.915" level="INFO">Typing text 'Smith' into text field 'css:div.form-group:nth-child(4) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:12.983" starttime="20180807 17:44:12.914"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:12.983" starttime="20180807 17:44:12.894"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_MOBILE_FIELD}</arg>
+<arg>${mobile}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:13.006" starttime="20180807 17:44:12.985"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:13.007" level="INFO">Typing text '12345678' into text field 'css:div.form-group:nth-child(5) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:13.077" starttime="20180807 17:44:13.006"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:13.078" starttime="20180807 17:44:12.983"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:13.098" starttime="20180807 17:44:13.078"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:13.098" level="INFO">Typing text 'user@phptravels.com' into text field 'css:div.form-group:nth-child(6) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:13.225" starttime="20180807 17:44:13.098"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:13.226" starttime="20180807 17:44:13.078"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:13.248" starttime="20180807 17:44:13.227"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:13.248" level="INFO">Typing text 'q' into text field 'css:div.form-group:nth-child(7) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:13.290" starttime="20180807 17:44:13.248"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:13.291" starttime="20180807 17:44:13.226"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_CONFIRM_PASS}</arg>
+<arg>${confirm_password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:13.310" starttime="20180807 17:44:13.291"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:13.310" level="INFO">Typing text 'demouser' into text field 'css:div.form-group:nth-child(8) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:13.383" starttime="20180807 17:44:13.310"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:13.383" starttime="20180807 17:44:13.291"></status>
+</kw>
+<kw name="Wait Enabled And Click" library="CustomCommands">
+<arguments>
+<arg>${SIGN_UP_BTN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:13.405" starttime="20180807 17:44:13.384"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:13.406" level="INFO">Clicking element 'css:.signupbtn'.</msg>
+<status status="PASS" endtime="20180807 17:44:13.446" starttime="20180807 17:44:13.405"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:13.446" starttime="20180807 17:44:13.384"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180807 17:44:14.447" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180807 17:44:14.447" starttime="20180807 17:44:13.446"></status>
+</kw>
+<kw name="Wait Visible And Check Text" library="CustomCommands">
+<arguments>
+<arg>${message_selector}</arg>
+<arg>${error}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:14.470" starttime="20180807 17:44:14.449"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+<arg>ignore_case=True</arg>
+</arguments>
+<msg timestamp="20180807 17:44:14.471" level="INFO">Verifying element 'css:.alert &gt; p:nth-child(1)' contains exact text 'The Password field must be at least 6 characters in length.'.</msg>
+<status status="PASS" endtime="20180807 17:44:14.494" starttime="20180807 17:44:14.471"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:14.494" starttime="20180807 17:44:14.448"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:14.495" starttime="20180807 17:44:12.811"></status>
+</kw>
+<kw name="Perform User Registration" library="RegistrationPage">
+<arguments>
+<arg>${FIRST_NAME}</arg>
+<arg>${LAST_NAME}</arg>
+<arg>${MOBILE_NO}</arg>
+<arg>${VALID_EMAIL}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<arg>${SHORT_PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+<arg>${NONMATCHING_PASSWORD_SPIEL}</arg>
+</arguments>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_FNAME_FIELD}</arg>
+<arg>${fname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:14.513" starttime="20180807 17:44:14.496"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:14.514" level="INFO">Typing text 'Johny' into text field 'css:div.form-group:nth-child(3) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:14.577" starttime="20180807 17:44:14.514"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:14.577" starttime="20180807 17:44:14.496"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_LNAME_FIELD}</arg>
+<arg>${lname}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:14.599" starttime="20180807 17:44:14.578"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:14.600" level="INFO">Typing text 'Smith' into text field 'css:div.form-group:nth-child(4) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:14.666" starttime="20180807 17:44:14.599"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:14.666" starttime="20180807 17:44:14.577"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_MOBILE_FIELD}</arg>
+<arg>${mobile}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:14.689" starttime="20180807 17:44:14.667"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:14.690" level="INFO">Typing text '12345678' into text field 'css:div.form-group:nth-child(5) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:14.762" starttime="20180807 17:44:14.689"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:14.762" starttime="20180807 17:44:14.666"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:14.784" starttime="20180807 17:44:14.763"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:14.784" level="INFO">Typing text 'user@phptravels.com' into text field 'css:div.form-group:nth-child(6) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:14.917" starttime="20180807 17:44:14.784"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:14.917" starttime="20180807 17:44:14.763"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:14.939" starttime="20180807 17:44:14.918"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:14.940" level="INFO">Typing text 'demouser' into text field 'css:div.form-group:nth-child(7) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:15.009" starttime="20180807 17:44:14.940"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:15.009" starttime="20180807 17:44:14.917"></status>
+</kw>
+<kw name="Wait Enabled And Set Text" library="CustomCommands">
+<arguments>
+<arg>${REGISTER_CONFIRM_PASS}</arg>
+<arg>${confirm_password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:15.030" starttime="20180807 17:44:15.010"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:15.030" level="INFO">Typing text 'q' into text field 'css:div.form-group:nth-child(8) &gt; input:nth-child(2)'.</msg>
+<status status="PASS" endtime="20180807 17:44:15.079" starttime="20180807 17:44:15.030"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:15.079" starttime="20180807 17:44:15.010"></status>
+</kw>
+<kw name="Wait Enabled And Click" library="CustomCommands">
+<arguments>
+<arg>${SIGN_UP_BTN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:15.108" starttime="20180807 17:44:15.080"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20180807 17:44:15.108" level="INFO">Clicking element 'css:.signupbtn'.</msg>
+<status status="PASS" endtime="20180807 17:44:15.165" starttime="20180807 17:44:15.108"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:15.165" starttime="20180807 17:44:15.079"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180807 17:44:16.165" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180807 17:44:16.166" starttime="20180807 17:44:15.165"></status>
+</kw>
+<kw name="Wait Visible And Check Text" library="CustomCommands">
+<arguments>
+<arg>${message_selector}</arg>
+<arg>${error}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" endtime="20180807 17:44:16.187" starttime="20180807 17:44:16.167"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${text}</arg>
+<arg>ignore_case=True</arg>
+</arguments>
+<msg timestamp="20180807 17:44:16.188" level="INFO">Verifying element 'css:.alert &gt; p:nth-child(1)' contains exact text 'Password not matching with confirm password.'.</msg>
+<status status="PASS" endtime="20180807 17:44:16.210" starttime="20180807 17:44:16.188"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:16.210" starttime="20180807 17:44:16.166"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:16.210" starttime="20180807 17:44:14.495"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180807 17:44:16.296" starttime="20180807 17:44:16.211"></status>
+</kw>
+<status status="PASS" endtime="20180807 17:44:16.296" critical="yes" starttime="20180807 17:43:52.819"></status>
+</test>
+<doc>Smoke tests for the PHPTravels site.</doc>
+<status status="PASS" endtime="20180807 17:44:16.298" starttime="20180807 17:43:52.656"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="UserRegistration" pass="1">UserRegistration</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
